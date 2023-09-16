@@ -20,7 +20,7 @@ function App() {
     async function fetchTodos() {
       try {
         // Make a fetch GET request to your API endpoint
-        const response = await fetch("http://localhost:3000/api/todos");
+        const response = await fetch("https://todoserver-h96u.onrender.com/api/todos");
         
 
         if (!response.ok) {
@@ -39,7 +39,7 @@ function App() {
   async function handleAddTodoSubmit(event) {
     event.preventDefault();
     try{
-        const response = await fetch("http://localhost:3000/api/todos2", {
+        const response = await fetch("https://todoserver-h96u.onrender.com/api/todos2", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

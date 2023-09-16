@@ -20,13 +20,13 @@ app.use(express.json())
 app.get("/api/todos", async (req, res) => {
   console.log("todos")
 
-    const todos = await sql`SELECT * FROM todos`
-    console.log(todos)
-    if (todos){
-        res.status(200).send(todos)
-    } else {
-        res.status(404).send("Errorrrrrrr. Leave the planet")       
-    }
+    // const todos = await sql`SELECT * FROM todos`
+    // console.log(todos)
+    // if (todos){
+    //     res.status(200).send(todos)
+    // } else {
+    //     res.status(404).send("Errorrrrrrr. Leave the planet")       
+    // }
 })
 
 app.post("/api/todos2", async (req, res) => {
