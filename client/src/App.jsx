@@ -62,7 +62,7 @@ function App() {
 
   async function deleteItem(id) {
     try {
-      const response = await fetch(`http://localhost:3000/api/todos2/${id}`, {
+      const response = await fetch(`https://todoserver-h96u.onrender.com/api/todos2/${id}`, {
         method: "DELETE",
       });
   
@@ -94,7 +94,7 @@ function App() {
   
   async function saveEdit(id) {
     try {
-      const response = await fetch(`http://localhost:3000/api/todos2/${id}`, {
+      const response = await fetch(`https://todoserver-h96u.onrender.com/api/todos2/${id}`, {
         method: "PUT", // Use PUT method to update the task
         headers: {
           "Content-Type": "application/json",
